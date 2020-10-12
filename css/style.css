@@ -84,8 +84,19 @@ body {
 .contacts .link:focus {
   color: var(--accent-color);
 }
+.contacts .link:hover .icon,
+.contacts .link:focus .icon {
+  fill: var(--accent-color);
+}
+.contacts .icon {
+  fill: currentColor;
+  margin-right: 10px;
+  vertical-align: -10%;
+}
 .hero {
-  background-color: #2f303a;
+  background-color: #c4c4c4;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('../img/bg-hero.jpg');
   text-align: center;
   padding: 200px 0;
 }
@@ -147,6 +158,13 @@ body {
 }
 .feature-item:not(:last-child) {
   margin-right: 30px;
+}
+.icon-container {
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+  border-radius: 4px;
 }
 
 .section-title {
@@ -215,6 +233,8 @@ p {
   text-align: center;
   background-color: var(--primary-white-color);
   border-radius: 0 0 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .teammates {
   color: var(--title-text-color);
@@ -224,12 +244,47 @@ p {
   font-weight: 500;
   margin-top: 0;
 }
+.description-teammates {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.social {
+  margin-top: 16px;
+}
+.social-button {
+  display: block;
+  text-align: center;
+  padding: 12px;
+  border: none;
+  width: 44px;
+  height: 44px;
+  color: #2a2a2a;
+  border-radius: 50%;
+}
+.button-icon {
+  fill: #afb1b8;
+}
+.social-button:hover {
+  background-color: var(--accent-color);
+}
+.social-button:hover .button-icon {
+  fill: var(--primary-white-color);
+}
+
+.social-button:not(:last-child) {
+  margin-right: 10px;
+}
+
 footer {
   background-color: #2f303a;
 }
 .footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
+}
+.footer-container > .footer-block:not(:last-child) {
+  margin-right: 70px;
 }
 .secondary-logo {
   color: var(--primary-white-color);
@@ -260,6 +315,35 @@ footer {
 .street {
   display: inline-block;
   margin-bottom: 9px;
+}
+.connect .title {
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.connect .social {
+  display: flex;
+  margin-top: 0;
+}
+.connect .button-icon {
+  fill: var(--primary-white-color);
+}
+.connect .social-item:not(:last-child) {
+  margin-right: 10px;
+}
+.connect .social-button {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.connect .social-button:hover {
+  background-color: var(--accent-color);
+}
+.connect .social-button:hover .button-icon {
+  fill: var(--primary-white-color);
 }
 .button {
   color: var(--title-text-color);
