@@ -17,9 +17,7 @@
   <body>
     <header>
       <div class="container site-head">
-        <a href="./index.html" class="logo link"
-          ><span class="accent">Web</span>Studio</a
-        >
+        <a href="./index.html" class="logo link"><span class="accent">Web</span>Studio</a>
         <nav>
           <ul class="site-nav list">
             <li class="item">
@@ -35,12 +33,15 @@
         </nav>
         <ul class="contacts list">
           <li class="item">
-            <a href="mailto:info@devstudio.com" class="link"
-              >info@devstudio.com</a
-            >
+            <a href="mailto:info@devstudio.com" class="link"> <svg class="icon" width="16" height="12">
+                <use href="./img/symbol-defs.svg#icon-envelope"></use>
+              </svg>info@devstudio.com</a>
           </li>
           <li>
-            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+            <a href="tel:+380961111111" class="link"> <svg class="icon" width="10" height="16">
+                <use href="./img/symbol-defs.svg#icon-smartphone"></use>
+    
+              </svg>+38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -181,19 +182,56 @@
     </main>
     <footer>
       <div class="container footer-container">
-        <a href="./index.html" class="link secondary-logo"><span class="accent">Web</span>Studio</a>
-        <address class="address">
-          <span class="street">г. Киев, пр-т Леси Украинки, 26 </span>
-          <ul class="list">
-            <li class="contact-list">
-              <a href="mailto:info@example.com" class="link">info@example.com</a>
+        <div class="footer-block">
+          <a href="./index.html" class="link secondary-logo"><span class="accent">Web</span>Studio</a>
+          <address class="address">
+            <span class="street">г. Киев, пр-т Леси Украинки, 26 </span>
+            <ul class="list">
+              <li class="contact-list">
+                <a href="mailto:info@example.com" class="link">info@example.com</a>
+              </li>
+              <li class="contact-list">
+                <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class=" footer-block connect">
+          <h3 class="title">присоединяйтесь</h3>
+    
+          <ul class="list social">
+            <li class="social-item">
+              <a class="link social-button" href="" target="_blank" rel="noreferrer noopener" aria-label="instagram">
+                <svg class="button-icon" width="20" height="20">
+                  <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                </svg> </a></li>
+            <li class="social-item">
+              <a class="link social-button" href="" target="_blank" rel="noreferrer noopener" aria-label="instagram">
+                <svg class="button-icon" width="20" height="20">
+                  <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li class="contact-list">
-              <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
+            <li class="social-item">
+              <a class="link social-button" href="" target="_blank" rel="noreferrer noopener" aria-label="instagram">
+                <svg class="button-icon" width="10" height="20">
+                  <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="link social-button" href="" target="_blank" rel="noreferrer noopener" aria-label="instagram">
+                <svg class="button-icon" width="20" height="20">
+                  <use href="./img/symbol-defs.svg#icon-linkedin  "></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+    
+    
+        </div>
       </div>
+    
     </footer>
   </body>
 </html>
