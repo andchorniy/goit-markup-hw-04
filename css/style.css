@@ -408,6 +408,7 @@ footer {
   border: 0;
   border-radius: 4px;
   padding: 6px 22px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .button-list .item:not(:last-child) {
   margin-right: 8px;
@@ -432,18 +433,18 @@ footer {
 }
 .portfolio-item .link {
   color: var(--primary-text-color);
-
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
 
   width: calc((100% - 60px) / 3);
 }
-.portfolio-item:hover,
-.portfolio-item:focus {
+.portfolio-item .link:hover .portfolio-item-link,
+.portfolio-item .link:focus .portfolio-item-link {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
 .portfolio-item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
